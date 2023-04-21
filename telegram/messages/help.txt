@@ -1,0 +1,9 @@
+Welcome to our Zuri powered by ChatGPT! I'm here to help you answer your questions on a wide range of topics using OpenAI's GPT-3 language model. Here are some commands you can use to interact with me:
+
+/start - Start chatting with me.
+/help - Display the list of available commands.
+/stop - Stop chatting with me.
+
+When you send a message to me, I'll use the OpenAI API to generate a response based on your message. Please note that responses may take a few seconds to generate, depending on the complexity of your question.
+
+If you have any questions or feedback, please don't hesitate to contact us. We're always here to help you get the most out of our chatbot.

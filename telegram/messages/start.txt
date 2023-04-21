@@ -1,0 +1,8 @@
+
+I'm Zuri powered by ChatGPT, your personal Safaricom Assistant. I'm here to help you with all your Safaricom needs, and more. Whether you need help managing your marketing messages, deactivating chargeable SMS services, or buying data bundles, I'm here to make your life easier.
+
+Here are some commands you can use to interact with me:
+
+/start - Start chatting with me.
+/help - Display the list of available commands.
+/stop - Stop chatting with me.
