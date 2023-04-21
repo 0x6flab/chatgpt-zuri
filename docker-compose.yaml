@@ -1,0 +1,16 @@
+version: "3.7"
+
+networks:
+  chatgpt-zuri-base-net:
+    driver: bridge
+
+services:
+  telegram-chatgpt-zuri:
+    image: ghcr.io/0x6flab/chatgpt-zuri/telegram-bot:latest
+    container_name: 0x6flab-chatgpt-zuri
+    restart: on-failure
+    environment:
+      ZURI_TELEGRAM_TOKEN: ${ZURI_TELEGRAM_TOKEN}
+      ZURI_OPENAI_API_KEY: ${ZURI_OPENAI_API_KEY}
+    networks:
+      - chatgpt-zuri-base-net
