@@ -28,4 +28,4 @@ rundev:
 	cd telegram && python3 app.py
 
 run:
-	docker-compose -f docker-compose.yaml up --env-file telegram/.env -d
+	docker-compose -f docker-compose.yaml --env-file telegram/.env up -d
