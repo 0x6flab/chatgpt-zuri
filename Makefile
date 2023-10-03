@@ -1,6 +1,6 @@
 DOCKER_IMAGE_NAME_PREFIX ?= ghcr.io/0x6flab/chatgpt-zuri
 SERVICE = telegram-bot
-VERSION ?= $(shell git describe --abbrev=0 --tags)
+VERSION ?= $(shell git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
 
 define make_docker
 	docker build --no-cache --tag=$(DOCKER_IMAGE_NAME_PREFIX)/$(SERVICE):$(1) -f telegram/Dockerfile telegram
