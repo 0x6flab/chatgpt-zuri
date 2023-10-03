@@ -30,6 +30,8 @@ logger = logging.getLogger(name="telegram-chatgpt-zuri")
 
 # Define a few command handlers. These usually take the two arguments update and
 # context.
+
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message when the command /start is issued."""
     user = update.effective_user
@@ -89,20 +91,17 @@ async def chat_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 def main() -> None:
     """Start the bot."""
-    # Create the Application and pass it your bot's token.
-    application = Application.builder().token(os.environ['ZURI_TELEGRAM_TOKEN']).build()
+    application = Application.builder().token(
+        os.environ['ZURI_TELEGRAM_TOKEN']).build()
 
-    # on different commands - answer in Telegram
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("stop", stop_command))
 
-    # on non command i.e message - echo the message on Telegram
     application.add_handler(MessageHandler(
         filters.TEXT & ~filters.COMMAND, chat_command)
     )
 
-    # Run the bot until the user presses Ctrl-C
     application.run_polling()
 
 
