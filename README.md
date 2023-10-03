@@ -20,7 +20,6 @@ This is a repository created to match or even beat the powers of Zuri, Safaricom
 - [ ] Add WhatsApp Integration
 - [ ] Add Facebook Messenger Integration
 - [ ] Streamline Deployment
-- [ ] Develop CI/CD Pipeline
 
 ## Pre-requisites
 
