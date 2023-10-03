@@ -1,5 +1,11 @@
 # chatgpt-zuri
 
+[![CI](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/ci.yaml)
+[![CD](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/cd.yaml/badge.svg)](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/cd.yaml)
+[![CodeQL](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/0x6flab/chatgpt-zuri/actions/workflows/github-code-scanning/codeql)
+![GitHub](https://img.shields.io/github/license/0x6flab/chatgpt-zuri)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/0x6flab/chatgpt-zuri)
+
 This is a repository created to match or even beat the powers of Zuri, Safaricom Chatbot, by showcasing a chatbot powered by OpenAI's GPT-3.5 language model. The chatbot is designed to answer users' questions on a wide range of topics using natural language processing techniques.
 
 ## Features
@@ -14,8 +20,6 @@ This is a repository created to match or even beat the powers of Zuri, Safaricom
 - [ ] Add WhatsApp Integration
 - [ ] Add Facebook Messenger Integration
 - [ ] Streamline Deployment
-- [ ] Move to MicroServices Architecture
-- [ ] Deploy Metrics Dashboard
 - [ ] Develop CI/CD Pipeline
 
 ## Pre-requisites
@@ -36,33 +40,33 @@ Once you have the pre-requisites installed, you can install the chatbot by runni
 
 1. Clone the repository
 
-    ```bash
-    git clone https://github.com/0x6flab/chatgpt-zuri
-    ```
+   ```bash
+   git clone https://github.com/0x6flab/chatgpt-zuri
+   ```
 
 2. Create a virtual environment
 
-    ```bash
-    python3 -m venv venv
-    ```
+   ```bash
+   python3 -m venv venv
+   ```
 
 3. Activate the virtual environment
 
-    ```bash
-    source venv/bin/activate
-    ```
+   ```bash
+   source venv/bin/activate
+   ```
 
 4. Install the dependencies
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 5. Run the chatbot
 
-    ```bash
-    make run
-    ```
+   ```bash
+   make run
+   ```
 
 ## Usage
 
