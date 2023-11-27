@@ -14,7 +14,7 @@ httpx==0.23.3
 hyperframe==6.0.1
 idna==3.4
 multidict==6.0.4
-openai==0.28.1
+openai==1.3.5
 python-telegram-bot==20.1
 requests==2.31.0
 rfc3986==1.5.0
