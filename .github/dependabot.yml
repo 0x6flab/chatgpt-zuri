@@ -8,14 +8,14 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
 
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "./telegram"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
