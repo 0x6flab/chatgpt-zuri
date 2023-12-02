@@ -1,12 +1,12 @@
 # Stage 1 - Install build dependencies
-FROM python:3.10-alpine AS builder
+FROM python:3.12-alpine AS builder
 WORKDIR /app
 RUN python -m venv .venv && .venv/bin/pip install --no-cache-dir -U pip setuptools
 COPY requirements.txt .
 RUN .venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # Stage 2 - Copy only necessary files to the runner stage
-FROM python:3.10-alpine
+FROM python:3.12-alpine
 LABEL org.opencontainers.image.source https://github.com/0x6flab/chatgpt-zuri
 WORKDIR /app
 COPY --from=builder /app /app
