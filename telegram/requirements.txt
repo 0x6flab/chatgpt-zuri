@@ -17,7 +17,7 @@ hyperframe==6.0.1
 idna==3.4
 multidict==6.0.4
 openai==1.12.0
-pydantic==2.5.2
+pydantic==2.6.1
 pydantic_core==2.14.5
 python-telegram-bot==20.7
 requests==2.31.0
